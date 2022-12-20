@@ -1,7 +1,41 @@
 {
-    "description":"Naked MCS51 framework, contains barely nothing",
-    "name":"framework-nakedmcs51",
-    "system":"all",
-    "url":"https://github.com/Palatis/framework-nakedmcs51",
-    "version":"0.0.2"
+  "name": "microchip_pic16",
+  "title": "Microchip (PIC16)",
+  "description": "The Low Pin-count (14) PIC® Flash microcontroller products offer all of the advantages of the well recognized mid-range x14 architecture with standardized features including a wide operating voltage of 2.0-5.5 volts, on-board EEPROM Data Memory, and nanoWatt Technology.",
+  "homepage": "https://www.microchip.com/en-us/product/PIC16F684",
+  "license": "Apache-2.0",
+  "keywords": [
+      "dev-platform",
+      "Microchip",
+      "PIC16",
+      "PIC",
+      "Harvard"
+  ],
+  "engines": {
+    "platformio": "^6"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/platformio/platform-intel_mcs51.git"
+  },
+  "version": "1.1.0",
+  "packages": {
+    "toolchain-sdcc": {
+      "type": "toolchain",
+      "owner": "platformio",
+      "version": ">=1.40100.0,<1.40201.0"
+    },
+    "tool-stcgal": {
+      "type": "uploader",
+      "optional": true,
+      "owner": "platformio",
+      "version": "~1.106.0"
+    },
+    "tool-vnproch55x": {
+      "type": "uploader",
+      "optional": true,
+      "owner": "platformio",
+      "version": "~1.0.220407"
+    }
+  }
 }
